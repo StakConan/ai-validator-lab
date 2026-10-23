@@ -1,0 +1,8 @@
+# Eval run 1 - llama3.1:8b
+Q1 Score: 0.0
+Q2 Score: 0.9
+Q3 Score: 0.6
+Q4 Score: abc
+Q5 Score: 0.2
+Q6 Score: nan
+Q7 Score: 5

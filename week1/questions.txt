@@ -1,0 +1,8 @@
+# Bộ câu hỏi baseline - 17/10/2026
+What are the 7 testing principles in ISTQB Foundation?
+What is the difference between verification and validation?
+
+   # indented comment
+Explain boundary value analysis with an example.
+Who are the authors of the ISTQB CT-AI syllabus?
+Kiểm thử hồi quy là gì?
