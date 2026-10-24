@@ -6,6 +6,7 @@ def parse_number(text):
     if number != number or number in (float("inf"), float("-inf")):
         return None
     return number
+
 def parse_confidence(text):
     pos = text.find(":")
     if pos == -1:
@@ -14,17 +15,18 @@ def parse_confidence(text):
     if score is None or not (0.0 <= score <= 1.0):
         return None
     return score
+
 filename = input("Enter the filename: ")
+
 try:
     f = open("week1/" + filename, encoding="utf-8")
 except FileNotFoundError:
     print("File not found")
     quit()
 
-
-validcount = 0
+scores = []
 invalidcount = 0
-total = 0
+
 with f:
     for line in f:
         line = line.strip()
@@ -34,10 +36,12 @@ with f:
         if score is None:
             invalidcount += 1
             continue
-        validcount += 1
-        total += score
+        scores.append(score)
 
-if validcount == 0:
+if len(scores) == 0:
     print("No valid scores found.")
 else:
-    print(f"Valid: {validcount} | Invalid: {invalidcount} | Average: {total / validcount:.3f}")
+    print(
+        f"Valid: {len(scores)} | Invalid: {invalidcount} | Average: {sum(scores) / len(scores):.3f} | " 
+        f"Max: {max(scores)} | Min: {min(scores)}"
+    )
