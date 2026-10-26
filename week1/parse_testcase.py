@@ -26,6 +26,6 @@ with f:
             tfail += 1
         else:
             tother += 1
-if invalidcount > 0:
-    print(f"Skipped (invalid format): {invalidcount}")
-print(f"Pass: {tpass} | Fail: {tfail} | Other: {tother}")
+        if invalidcount > 0:
+            print(f"Skipped (invalid format): {invalidcount}")
+        print(f"Pass: {tpass} | Fail: {tfail} | Other: {tother}")

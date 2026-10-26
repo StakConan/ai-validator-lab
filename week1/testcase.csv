@@ -1,0 +1,13 @@
+ID,Title,Priority,Status
+TC01,Login with valid account,High,Pass
+TC02,Login with wrong password,High,Fail
+TC03,Logout,Medium,Pass
+TC04,Reset password
+TC05,View profile,Low,Pass
+TC06,"Login, then logout",High,Pass
+TC07,Search,Low,Blocked
+TC08, Logout, Low, Pass
+TC09, Update profile, Block,Fail
+
+
+
