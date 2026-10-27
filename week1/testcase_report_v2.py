@@ -23,9 +23,11 @@ if skipcount > 0:
     print(f"Skipped (invalid format): {skipcount}")
 part1 = []
 for key, value in statuscount.items():
-    part1.append(f"{key}: {value}")
-print("Status -> " + " | ".join(part1))
+    part1.append((value, key))
+part1.sort(reverse=True)
+print(f"Status -> {part1}")
 part2 = []
 for key, value in severitycount.items():
-    part2.append(f"{key}: {value}")
-print("Priority -> " + " | ".join(part2))
+    part2.append((value, key))
+part2.sort(reverse=False)
+print(f"Priority -> {part2}")
