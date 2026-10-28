@@ -1,6 +1,6 @@
 {
-  "model": "llama3.1:8b",
-  "answer": "Kiểm thử hồi quy là một kỹ thuật được sử dụng để đánh giá hiệu suất của mô hình dự đoán...",
-  "tokens": 342,
-  "tokens_per_second": 2.89
+  "model": "llama3.2:3b",
+  "answer": "Regression testing is a software testing process that involves re-running tests after making changes or updates to ensure that no new bugs or issues have been introduced and that existing functionality still works as expected. The goal of regression testing is to identify and fix defects that may have been introduced during the development process, thereby maintaining the overall quality and stability of the software system.",
+  "tokens": 71,
+  "tokens_per_second": 24.29
 }
